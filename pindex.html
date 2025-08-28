@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Abu • VFX Portfolio</title>
+  <meta name="description" content="A high-end, VFX‑loaded developer portfolio with neon lights, particles, tilt cards and smooth interactions. Built in vanilla HTML/CSS/JS." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="pstyle.css">
+  <script src="pscript.js" defer></script>
+  <style>
+  </style>
+</head>
+<body>
+  <canvas id="fx-canvas" aria-hidden="true"></canvas>
+  <div class="cursor-light" id="cursorLight" aria-hidden="true"></div>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand"><span class="dot"></span> Abu • <span style="color:var(--accent)">Portfolio</span></div>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+      <div class="spacer"></div>
+      <a class="btn" href="#projects" role="button">⚡ View Work</a>
+      <a class="btn" href="mailto:abumohamed0408@gmail.com">✉️ Hire Me</a>
+    </div>
+  </nav>
+
+  <header class="container hero">
+    <div>
+      <h1 class="title"><span class="gradient-text">Abuthaheer</span><br/>AI Engineer & Data Science </h1>
+      <p class="subtitle">Data Science & AI Engineer — skilled in Python, Machine Learning, and Data Visualization. Key focus on data cleaning, predictive modeling, and delivering smart insights with AI solutions.
+</p>
+<div class="stats">
+        <span class="chip">🚀 10+ Projects</span>
+        <span class="chip">🤖 AI & Machine Learning</span>
+        <span class="chip">📊 Data Science</span>
+        <span class="chip">🐍 Python</span>
+      </div>
+      <div style="margin-top:18px; display:flex; gap:12px">
+        <a class="btn" href="#contact">Let’s collaborate</a>
+        <a class="btn" href="#projects">Explore Projects</a>
+      </div>
+    </div>
+    <aside class="hero-card tilt" data-tilt>
+      <div class="hero-grid">
+      <div class="mini" data-tilt>
+      <div class="shine"></div>
+      <h4>AI Enthusiast</h4>
+      <span class="mono">Machine Learning • Deep Learning</span>
+    </div>
+   <div class="mini" data-tilt>
+      <div class="shine"></div>
+      <h4>Data Science</h4>
+      <span class="mono">Python • Pandas • NumPy </span>
+    </div>
+
+    <div class="mini" data-tilt>
+      <div class="shine"></div>
+      <h4>Excel Specialist</h4>
+      <span class="mono">MS Excel • Data Handling</span>
+    </div>
+        <div class="mini" data-tilt>
+      <div class="shine"></div>
+      <h4>Tally Expert</h4>
+      <span class="mono">Accounting • Billing</span>
+    </div>
+    <div class="mini" data-tilt>
+      <div class="shine"></div>
+      <h4>Designer</h4>
+      <span class="mono">Photoshop • CorelDRAW</span>
+      </div>
+       <div class="mini" data-tilt>
+      <div class="shine"></div>
+      <h4>Web Skills</h4>
+      <span class="mono">HTML • CSS </span>
+    </div>
+      </div>
+    </aside>
+  </header>
+
+  <section id="about" class="container reveal">
+    <h2 class="section">About</h2>
+    <p class="lead">"I'm Abuthaheer, a B.Sc. Physics graduate then i have Diploma in DTP, and I have recently completed my studies in AI Engineering. I’m passionate about merging science, creativity, and technology to build smart solutions. With a strong foundation in physics and design, along with skills in artificial intelligence, I aim to create innovative projects that solve real-world problems."</p>
+  </section>
+
+  <section id="projects" class="container reveal">
+  <h2 class="section">Projects</h2>
+  <p class="lead">My AI, Data Science, Design and Web Projects. Hover for shine. Tilt for depth.</p>
+  
+  <div class="grid">
+
+    <!-- House Price Predictor -->
+    <article class="card tilt" data-tilt>
+      <div class="thumb" style="background-image: url('house.jpg');"></div>
+      <div class="sheen"></div>
+      <div class="body">
+        <div class="tag">Streamlit • ML</div>
+        <h3>House Price Predictor</h3>
+        <p class="lead">Streamlit app that predicts house prices using Bedrooms, Bathrooms, Sqft.</p>
+        <div class="actions">
+          <a class="btn" href="https://your-houseprice-app-link">Live</a>
+          <a class="btn" href="https://github.com/your-repo/house-price">Code</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- RAG App -->
+    <article class="card tilt" data-tilt>
+      <div class="thumb" style="background-image: url('rag.png');"></div>
+      <div class="sheen"></div>
+      <div class="body">
+        <div class="tag">Streamlit • AI</div>
+        <h3>RAG Model App</h3>
+        <p class="lead">Retrieval-Augmented Generation app for smarter question answering.</p>
+        <div class="actions">
+          <a class="btn" href="https://your-rag-app-link">Live</a>
+          <a class="btn" href="https://github.com/your-repo/rag-app">Code</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Scam Detector -->
+    <article class="card tilt" data-tilt>
+      <div class="thumb" style="background-image: url('spam.jpg');"></div>
+      <div class="sheen"></div>
+      <div class="body">
+        <div class="tag">Streamlit • Security</div>
+        <h3>Scam Detection App</h3>
+        <p class="lead">ML-powered Streamlit app to identify scam transactions/messages.</p>
+        <div class="actions">
+          <a class="btn" href="https://your-scam-app-link">Live</a>
+          <a class="btn" href="https://github.com/your-repo/scam-detector">Code</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Photoshop / CorelDRAW -->
+    <article class="card tilt" data-tilt>
+      <div class="thumb" style="background-image: url('Corel-Vs-Photoshop.jpg');"></div>
+      <div class="sheen"></div>
+      <div class="body">
+        <div class="tag">Design • Creative</div>
+        <h3>Photoshop & CorelDRAW Works</h3>
+        <p class="lead">Posters, flyers and creative designs using Adobe Photoshop & CorelDRAW.</p>
+        <div class="actions">
+          <a class="btn" href="images/design_portfolio.pdf">View</a>
+          <a class="btn" href="https://your-dribbble-or-behance-link">More</a>
+        </div>
+      </div>
+    </article>
+
+    <!-- Python Scripts -->
+    <article class="card tilt" data-tilt>
+      <div class="thumb" style="background-image: url('banner-docs.png');"></div>
+      <div class="sheen"></div>
+      <div class="body">
+        <div class="tag">Python • Scripts</div>
+        <h3>Python Projects</h3>
+        <p class="lead">Collection of Python scripts & notebooks (ML models, automation tools).</p>
+        <div class="actions">
+          <a class="btn" href="downloads/python_files.zip">Download</a>
+          <a class="btn" href="https://github.com/your-repo/python-scripts">Code</a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+  <section id="skills" class="container reveal">
+    <h2 class="section">Skills</h2>
+    <span class="skill">Python(AI)</span>
+    <span class="skill">Streamlit Apps</span>
+    <span class="skill">Data Analysis</span>
+    <span class="skill">Data Visualization</span>
+    <span class="skill">Machine Learning</span>
+    <span class="skill">MS Excel</span>
+    <span class="skill">Adobe Photoshop</span>
+    <span class="skill">CorelDRAW</span>
+    
+    
+    </div>
+  </section>
+
+  <section id="contact" class="container contact reveal">
+    <div>
+      <h2 class="section">Contact</h2>
+      <p class="lead">Have a concept? I can turn it into a living interface. Drop a note—let’s build something 🔥</p>
+      <div class="form">
+        <div class="row">
+          <input id="name" placeholder="Your name" />
+          <input id="email" type="email" placeholder="Email" />
+        </div>
+        <div class="row" style="grid-template-columns:1fr; margin-top:10px">
+          <textarea id="msg" placeholder="Tell me about your project…"></textarea>
+        </div>
+        <div style="display:flex; gap:10px; margin-top:12px">
+          <button class="btn" id="sendBtn" type="button">Send Message</button>
+          <button class="btn" id="copyBtn" type="button">Copy Email</button>
+        </div>
+      </div>
+    </div>
+    <aside>
+      <div class="hero-card" style="min-height:280px">
+  <div class="mono">Quote</div>
+  <h2 style="margin:8px 0 0">"AI is not the future, it’s the present — I build with it."</h2>
+  <p class="lead">Focused on AI, Data Science, and creative problem solving.</p>
+  <div class="stats" style="margin-top:14px">
+    <span class="chip">AI</span>
+    <span class="chip">Data</span>
+    <span class="chip">Design</span>
+  </div>
+</div>
+
+    </aside>
+  </section>
+
+  <footer class="container">
+    <footer>© <span id="year"></span> Abu Thaheer • Built with VFX web Design + love</footer>
+  </footer>
+</body>
+</html>
