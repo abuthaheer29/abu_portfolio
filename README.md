@@ -1,2 +1,2 @@
 # abu_portfolio
-https://github.com/abuthaheer29/abu_portfolio.git
+https://abuthaheer29.github.io/abu_portfolio/
